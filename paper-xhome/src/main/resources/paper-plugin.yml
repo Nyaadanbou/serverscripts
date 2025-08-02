@@ -1,0 +1,5 @@
+name: ServerScripts-Home
+version: '${version}'
+main: cc.mewcraft.serverscripts.ServerScripts
+api-version: '1.21'
+

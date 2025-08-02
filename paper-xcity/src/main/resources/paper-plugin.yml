@@ -1,0 +1,4 @@
+name: ServerScripts-City
+version: '${version}'
+main: cc.mewcraft.serverscripts.ServerScripts
+api-version: '1.21'

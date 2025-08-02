@@ -1,0 +1,9 @@
+name: ServerScripts-Caps
+version: '${version}'
+main: cc.mewcraft.serverscripts.ServerScripts
+api-version: '1.21'
+dependencies:
+  server:
+    PlotSquared:
+      load: BEFORE
+      required: true
