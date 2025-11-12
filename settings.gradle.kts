@@ -4,12 +4,13 @@ plugins {
 
 dependencyResolutionManagement {
     repositories {
-        maven("https://repo.mewcraft.cc/releases")
-        maven("https://repo.mewcraft.cc/private") {
-            credentials {
-                username = providers.gradleProperty("nyaadanbou.mavenUsername").getOrElse("")
-                password = providers.gradleProperty("nyaadanbou.mavenPassword").getOrElse("")
-            }
+        maven("https://repo.mewcraft.cc/releases") {
+            name = "nyaadanbouReleases"
+        }
+        maven {
+            url = uri("https://repo.mewcraft.cc/private")
+            name = "nyaadanbouPrivate"
+            credentials(PasswordCredentials::class)
         }
     }
     versionCatalogs {
@@ -19,7 +20,7 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("libs") {
-            from("cc.mewcraft.gradle:catalog:0.8-SNAPSHOT")
+            from("cc.mewcraft.gradle:catalog:0.11-SNAPSHOT")
         }
     }
 }

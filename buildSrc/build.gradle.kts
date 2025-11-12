@@ -7,11 +7,10 @@ repositories {
     gradlePluginPortal()
 
     // 仓库提供: nyaadanbou version catalog, nyaadanbou conventions
-    maven("https://repo.mewcraft.cc/private") {
-        credentials {
-            username = providers.gradleProperty("nyaadanbou.mavenUsername").getOrElse("")
-            password = providers.gradleProperty("nyaadanbou.mavenPassword").getOrElse("")
-        }
+    maven {
+        url = uri("https://repo.mewcraft.cc/private")
+        name = "nyaadanbouPrivate"
+        credentials(PasswordCredentials::class)
     }
 }
 

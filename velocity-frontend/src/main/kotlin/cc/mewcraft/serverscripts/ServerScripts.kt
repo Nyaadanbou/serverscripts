@@ -8,8 +8,8 @@ import com.velocitypowered.api.proxy.ProxyServer
 import org.slf4j.Logger
 
 @Plugin(
-    id = "serverscripts-frontend",
-    name = "ServerScripts-Frontend",
+    id = "script-frontend",
+    name = "Script-Frontend",
     version = "1.0.0-SNAPSHOT",
     description = "Scripts for frontend proxy",
     authors = ["Nailm"]

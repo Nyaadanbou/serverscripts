@@ -15,6 +15,6 @@ tasks {
     }
     copyJar {
         environment = "paper"
-        jarFileName = "serverscripts-xcaps-${project.version}.jar"
+        jarFileName = "script-city-${project.version}.jar"
     }
 }
